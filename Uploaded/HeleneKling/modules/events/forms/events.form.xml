@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form xmlns="http://jelix.org/ns/forms/1.1">
+
+<input ref="name">
+	<label>Name : </label>
+</input>
+
+<date ref="date_debut">
+	<label>Date de Debut</label>
+  </date>
+
+<date ref="date_fin">
+	<label>Date de fin</label>
+ </date>
+
+<input ref="horaires">
+	<label>Horaires</label>
+</input>
+
+<input ref="adresse">
+	<label>Adresse : </label>
+</input>
+
+<upload ref="flyer" maxsize="20000000">
+    <label>Flyer</label>
+</upload>
+
+<htmleditor ref="description" config="full" >
+	<label></label>
+</htmleditor>
+
+<submit ref="_submit">
+	<label>ok</label>
+</submit>
+
+</form>

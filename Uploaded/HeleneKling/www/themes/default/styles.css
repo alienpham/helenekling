@@ -1,0 +1,375 @@
+/* CSS version 2.0, by Boris Cherny. */
+/*Many thanks to Andreas, NickyD, ditchCrawler, TomW, whowrotewhat, hash bar, and Sanden Cottongame */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #92847b url("./images/background.gif") center repeat-y;
+	color: #616161;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 69%;
+	text-align: center;
+}
+a {
+	color: #6799b1;
+	text-decoration: underline;
+}
+a:hover {
+	color: #838f96;
+	text-decoration: none;
+}
+acronym {
+	border-bottom: 1px dashed #999999;
+	cursor: help;
+}
+.signature {
+    font-weight:bold;
+    font-style:italic;
+}
+/*
+h1 {
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-right: 20px solid #b48181;
+	color: #b38b84;
+	font-size: 140%;
+	font-weight: normal;
+	margin: 5px 0;
+}*/
+.bloc {
+	border-left: 1px solid #616161;
+    border-right: 1px solid #616161;
+    border-bottom: 1px solid #616161;
+    
+}
+.bloc img{
+	padding-left: 10px;
+}
+
+.bloc h1 {
+    border-bottom: 1px solid #616161;
+	border-top: 1px solid #616161;
+	border-right: 20px solid #616161;
+	color:white;
+    font-size: 140%;
+	font-weight: normal;
+    padding-left : 10px;
+	margin: 5px 0;
+    background-color: #858585;
+}
+
+#silverlightControlHost {
+	    height: 100%;
+}
+.option {
+    float:right;
+    display:block;
+}
+.lang-menu ul {height:1.5em; margin: 0;  padding: 0;}
+.lang-menu li {
+  float:left;
+  list-style-type:none;
+  margin: 0px 3px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  font: bold;
+  white-space:nowrap;
+}
+.lang-menu li a {font-size: 80%}
+.lang-menu li a {
+    color:white;
+  display: block;
+  text-decoration: none;
+}
+.lang-menu li a:hover {
+  color:black;
+  display: block;
+  text-decoration: none;
+}
+.option ul {height:1.5em; margin: 0;  padding: 0;}
+
+
+
+.option li {
+  float:left;
+  list-style-type:none;
+  margin: 0px 3px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  font: bold;
+  border: 1px solid #ccc;
+  padding: 2px 2px 2px 2px;
+  white-space:nowrap;
+}
+.option li a {font-size: 80%}
+.option li a {
+  display: block;
+  text-decoration: none;
+}
+
+
+/* The background-image's for the #wrap below are for preloading all the page's images, just add your own images to the pattern */
+#wrap {
+	background-image: url("./images/arrow.gif");
+	background-image: url("./images/arrow_outline.gif");
+	background-image: url("./images/background.gif");
+	background-image: url("./images/camera1.gif");
+	background-image: url("./images/camera2.gif");
+	background-image: url("./images/camera3.gif");
+	background-image: url("./images/header.gif");
+	background-image: url("./images/selector.gif");
+	background-image: url("./images/selector_sub.gif");
+	background-repeat: no-repeat;
+	background-position: -5000px -5000px;
+	margin: 0 auto;
+	text-align: left;
+	width: 900px;
+}
+#header {
+	background: url("./images/header.gif") center no-repeat;
+	color: #e0e0e0;
+	height: 100px;
+	line-height: 120px;
+	text-indent: 35px;
+}
+#header-title {
+    position:absolute;
+    font-size: 327%;
+    font-weight: bold;
+}	
+#quick-search {
+    margin-right: 30px;
+    float:right;
+    font-weight: bold; font-size: 80%;
+}
+#nav {
+	padding-bottom: 40px;
+	width: 100px;
+}
+/* leave the padding-bottom in the #nav if you want some space between the navigation and the photos in the left column */
+#nav ul li {
+	display: inline;
+	line-height: 16px;
+	list-style: none;
+}
+#nav ul li a {
+	border-bottom: 1px solid #666;
+	color: #fff;
+	display: block;
+	padding: 7px;
+	text-decoration: none;
+	width: 165px;
+}
+/* remove the 'text-decoration: underline;' in #nav li a:hover if you don't want the links in the left nav menu to be underlined when the user hovers over them with their mouse */
+#nav li a:hover {
+	background: #666 url("./images/selector.gif") center right no-repeat;
+}
+/* the following 3 rules are for the submenu, if you removed the submenu remove these rules as well */
+#nav ul ul li {
+	line-height: 10px;
+	border-bottom: none;
+}
+#nav ul ul li a {
+	color: #ccc;
+	text-indent: 10px;
+}
+#nav ul ul li a:hover {
+	background-image: url("./images/selector_sub.gif");
+}
+#column1 {
+	float: left;
+	width: 100px;
+	margin-left: 0px;
+}
+#column1 img {
+	border: 1px solid #666;
+	margin: 5px 20px;
+	padding: 10px 20px;
+}
+/* in the tag below, #column2, I used the Underscore Hack to give the column2 div the correct margins in Firefox 1 */
+#column2 {
+	float: none !important;
+	float: right;
+       min-height:400px;
+	   min-width:700px;
+	margin-left: 175px !important;
+	padding: 12px 40px 30px 9px;
+}
+#column2 p {
+	line-height: 140%;
+    text-indent: 10px;
+    padding-top:10px; 
+}
+
+#column2 ul {
+        margin-left: 30px !important;
+}
+
+#column2 .paint
+{
+width:500px;
+}
+
+#column2 .photo
+{
+width:500px;
+}
+.event h2
+{
+	color: #b38b84;
+	font-size: 120%;
+	font-weight: normal;
+	margin: 5px 10px;
+}
+.event p
+{
+	margin: 0px 20px;
+}
+.event {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+#column2 .preview
+{
+width:100%;
+}
+
+
+#links div {
+	float: left;
+	width: 140px;
+}
+#links div li {
+	list-style: none;
+}
+#links div li a {
+	background: url("./images/arrow_outline.gif") left no-repeat;
+	padding-left: 15px;
+	text-decoration: none;
+}
+#links div li a:hover {
+	background-image: url("./images/arrow.gif");
+	color: #ac835c;
+	text-decoration: underline;
+}
+#footer {
+	clear: both;
+	color: #999;
+	font-size: 9px;
+	padding: 30px 0 10px 0;
+	text-indent: 300px;
+}
+#footer a {
+	color: #999999;
+	text-decoration: underline;
+}
+
+
+/* Menu de navigation */
+#navigation {
+	min-width: 150px;
+    min-height:50px;
+    margin-left:10px;
+    margin-top:5px;
+ 	float: left; /* -> 2 */
+    border-left: 1px solid #616161;
+    border-right: 1px solid #616161;
+    border-bottom: 1px solid #616161;
+    //background-color: #858585;
+    background-color: white;
+}
+#navigation h1{
+	border-bottom: 1px solid #616161;
+	border-top: 1px solid #616161;
+	border-right: 20px solid #616161;
+	color:white;
+    text-align:center;
+	font-size: 140%;
+	font-weight: normal;
+	margin: 5px 0;
+    background-color: #858585;
+}
+
+#navigation h1{
+    margin-top:-1px;
+}
+#navigation ul{
+    padding-right:10px;
+    padding-bottom:10px;
+    text-indent: -20px;
+    text-decoration:none;
+    list-style:none;
+}
+#navigation li{
+    text-decoration:none;
+    list-style:none;
+}
+#navigation a {
+	display: block;
+    color : black;
+	text-decoration: none;
+    color:#616161;
+    font-weight:bold;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:100%;  
+}
+
+#navigation a:hover{
+    color : white;
+	text-decoration: none;
+    color:black;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-size:100%;   
+}
+#navigation a:before {
+	content : url("./images/push_vert.png") "  ";
+	top: 10px;
+}
+#navigation a:hover:before {
+	content : url("./images/pushed_vert.png") "  ";
+}
+/* Contenu */
+#contenu {
+	margin-left: 25%; /* -> 4 */
+	margin-bottom: 20px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+#contenu p, #contenu li {
+	line-height: 1.5;
+}
+
+.comentaire {
+
+    margin-top:20px;
+    padding-bottom : 10px;
+    
+}
+.comentaire p{
+	text-indent: 50px;
+}
+
+.comentaire h1 {
+	border-bottom: none;
+	border-top: none ;
+	border-right: none;
+	color:#616161;
+   	font-weight: bold;
+    padding-left : 10px;
+	margin: 5px 0;
+    background-color: white;
+}
+.comentaire h1:before {
+	content : url("./images/push_jaune.png") "  ";
+}
+
+a[hreflang="en"]:after {
+content: " " url(./images/en_bw.png);
+}
+a[hreflang="fr"]:after {
+content: " " url(./images/fr_bw.png);
+}

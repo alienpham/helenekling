@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form xmlns="http://jelix.org/ns/forms/1.1">
+
+
+<input ref="name">
+	<label locale="jPicasa~common.forms.input.name" />
+</input>
+<submit ref="_submit">
+	<label   locale="jPicasa~common.search" />
+</submit>
+</form>

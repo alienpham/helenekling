@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="PhotoGallery.Plus"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="27" Height="24.5">
+	<Canvas x:Name="root">
+	<Ellipse Height="24" Width="24" Fill="#00727171" Stroke="#FFFFFFFF" Canvas.Left="2" StrokeThickness="2"/>
+        <Path x:Name="cross1" Height="16" Width="3" Canvas.Left="12.75" Canvas.Top="4.25" Data="M13.75,18 L13.75,5.25" Fill="#FFFFFFFF" Stretch="Fill" Stroke="#FFFFFFFF" StrokeThickness="3">
+            <Path.Resources>
+                <Storyboard x:Name="cross1RotateToX">
+                    <DoubleAnimation From="0" To="225" Duration="0:0:1"
+                       Storyboard.TargetName="cross1RotateTrans"
+                       Storyboard.TargetProperty="Angle">
+                        
+                    </DoubleAnimation>
+                </Storyboard>
+                <Storyboard x:Name="cross1RotateToPlus">
+                    <DoubleAnimation From="225" To="0" Duration="0:0:1"
+                       Storyboard.TargetName="cross1RotateTrans"
+                       Storyboard.TargetProperty="Angle">
+
+                    </DoubleAnimation>
+                </Storyboard>
+            </Path.Resources>
+            <Path.RenderTransform>
+                <RotateTransform x:Name="cross1RotateTrans" CenterX="1.5" CenterY="8">
+                </RotateTransform>
+            </Path.RenderTransform>
+        </Path>
+        <Path x:Name="cross2" Height="3" Width="16" Canvas.Left="6" Canvas.Top="11.25" Data="M7,12.25 L20,12.25" Fill="#FFFFFFFF" Stretch="Fill" Stroke="#FFFFFFFF" StrokeThickness="3">
+            <Path.Resources>
+                <Storyboard x:Name="cross2RotateToX">
+                    <DoubleAnimation From="0" To="225" Duration="0:0:1"
+                       Storyboard.TargetName="cross2RotateTrans"
+                       Storyboard.TargetProperty="Angle">
+
+                    </DoubleAnimation>
+                </Storyboard>
+                <Storyboard x:Name="cross2RotateToPlus">
+                    <DoubleAnimation From="225" To="0" Duration="0:0:1"
+                       Storyboard.TargetName="cross2RotateTrans"
+                       Storyboard.TargetProperty="Angle">
+
+                    </DoubleAnimation>
+                </Storyboard>
+            </Path.Resources>
+            <Path.RenderTransform>
+                <RotateTransform x:Name="cross2RotateTrans" CenterX="8" CenterY="1.5">
+                </RotateTransform>
+            </Path.RenderTransform>
+        </Path>
+	</Canvas>
+</UserControl>

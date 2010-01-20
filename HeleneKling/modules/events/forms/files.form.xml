@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form xmlns="http://jelix.org/ns/forms/1.1">
+
+<input ref="name">
+	<label>Name : </label>
+</input>
+
+<upload ref="file" maxsize="20000000">
+    <label>Fichier</label>
+</upload>
+  
+<submit ref="_submit">
+	<label>ok</label>
+</submit>
+
+</form>
