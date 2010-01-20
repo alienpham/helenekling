@@ -1,0 +1,8 @@
+﻿<UserControl x:Class="PhotoGallery.ImageThumb"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="130" Height="100" Foreground="{x:Null}">
+        <Image x:Name="thumbnail" Source="{Binding Image}" Height="100" Width="100" MouseLeftButtonDown="change_image" >
+           
+        </Image>
+</UserControl>

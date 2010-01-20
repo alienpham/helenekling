@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form xmlns="http://jelix.org/ns/forms/1.1">
+<htmleditor ref="text" config="full">
+	<label></label>
+</htmleditor>
+
+<hidden ref="name" />
+<submit ref="_submit">
+	<label>ok</label>
+</submit>
+</form>

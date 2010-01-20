@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dao xmlns="http://jelix.org/ns/dao/1.0">
+    <datasources>
+        <primarytable name="events" realname="events" primarykey="id" />
+    </datasources>
+    <record>
+        <property name="id" fieldname="id" datatype="autoincrement"/>
+        <property name="name" fieldname="name" datatype="string" required="true" maxlength="255"/>
+        <property name="date_debut" fieldname="date_debut" datatype="date" required="true" maxlength="255"/>
+		<property name="date_fin" fieldname="date_fin" datatype="date" required="true" maxlength="255"/>
+ 		<property name="horaires" fieldname="horaires" datatype="string" required="true" maxlength="255"/>
+ 		<property name="adresse" fieldname="adresse" datatype="string" required="true" maxlength="255"/>
+ 		<property name="description" fieldname="description" datatype="text" required="false"/>
+        <property name="flyer" fieldname="flyer" datatype="string" required="false"/>
+        <property name="language" fieldname="language" datatype="string" required="true" maxlength="255"/>
+        
+        
+        <!--<property name="" fieldname="" datatype="string/int/float/date"
+        required="yes" maxlength="" minlength="" regexp="" sequence=""
+        updatepattern="" insertpattern="" selectpattern=""/>-->
+    </record>
+    <factory>
+        <!--<method name="findByStage" type="select/selectfirst/delete/update/php">
+            <parameter name="" />
+            <values>
+                <value property="" value="" />
+            </values>
+            <conditions logic="and/or">
+                <eq property="" value="" />
+            </conditions>
+            <order>
+                <orderitem property="" way="asc/desc" />
+            </order>
+            <limit offset="" count=""/>
+            <body><![CDATA[
+            ]]></body>
+        </method>-->
+    </factory>
+</dao>
